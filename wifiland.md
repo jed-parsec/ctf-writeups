@@ -38,3 +38,17 @@ Having obtained the password, which is "12345678," I decided to utilize it as th
 
 
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/2186a712-9f73-4981-9d0d-b0a2fdc4b109)
+
+
+
+After using the acquired password for decryption, I noticed an ARP message originating from the source address 02:00:00:00:13:00. The message contained the inquiry "Who has 93.184.216.34? Tell 10.0.3.19."
+
+This discovery revealed both the Client IP address (10.0.3.19) and the Target IP address (93.184.216.34)
+![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/87ce8944-8c7f-46a6-a950-bc0dba862145)
+
+Now that we have obtained the client IP and the target IP, we can utilize them as values for the variables in the get_flag.py to get the flag
+![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/8e364114-5e23-47e4-b482-7cef5f7e0828)
+
+
+
+
