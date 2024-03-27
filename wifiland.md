@@ -15,10 +15,12 @@ Analyzing the wifiland.pcap
 
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/bc058627-18db-4a6d-8bae-93579631c7de)
 
-Upon opening `wifiland.pcap` in Wireshark, we observed various network packets, including IEEE 802.11 Beacon frames. These frames contain information about the Wi-Fi network, including MAC addresses.
+Upon examining the wifiland.pcap file in Wireshark, I noticed a variety of network packets, including IEEE 802.11 Beacon frames. These frames contain crucial information about the Wi-Fi network, such as MAC addresses.
 
-One of the sources observed in the Beacon frames is `02:00:00:00:05:00`, which appears to be formatted similarly to MAC addresses.
-Hmmm, we don't see any signs of IP addresses... There must be something else going on. I figured I'd filter out the EAPOL to check for any 4-way handshakes which can be used to crack the pwd using aircrack-ng
+While inspecting the Beacon frames, I observed that one of the MAC addresses appeared as 02:00:00:00:05:00, resembling the typical MAC address format. Strangely, no IP addresses were evident. This led me to suspect there might be additional layers of network activity.
+
+To delve deeper into the analysis, I decided to filter out the EAPOL frames to investigate any potential 4-way handshakes. These handshakes could be exploited for password cracking purposes using tools like aircrack-ng.
+
 
 
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/0b89c6f5-7343-4fc0-a6fe-a9f716dacbd9)
