@@ -25,8 +25,7 @@ To delve deeper into the analysis, I decided to filter out the EAPOL frames to i
 
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/0b89c6f5-7343-4fc0-a6fe-a9f716dacbd9)
 
-We found a 4-way handshake between 02:00:00:00:05:00 and 02:00:00:00:13:00, so i used aircrack-ng to get the PSK
-
+After I found a 4-way handshake between the MAC addresses 02:00:00:00:05:00 and 02:00:00:00:13:00, I used a tool called aircrack-ng to get the Wi-Fi password.
 
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/7a9d3ee6-d498-4bda-b42e-d485db3a6d08)
 
