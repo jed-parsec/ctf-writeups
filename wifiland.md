@@ -34,6 +34,7 @@ Cracking it was successful!
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/615ca87a-2a2a-48dc-85e1-2ae6254d90a9)
 
 
-Now that we got the pwd which is 12345678, i figured I'd use the pwd as a decryption key. Just go to Edit -> Preference -> Protocols -> IEEE 802.11 and then edit the decryption keys.
+Having obtained the password, which is "12345678," I decided to utilize it as the decryption key. To do so, We will navigate to the "Edit" menu, followed by "Preferences," and then select "Protocols" and "IEEE 802.11." From there, proceed to edit the decryption keys accordingly.
+
 
 ![image](https://github.com/jed-parsec/ctf-writeups/assets/71179248/2186a712-9f73-4981-9d0d-b0a2fdc4b109)
